@@ -10,3 +10,8 @@ const dom = new JSDOM(file);
 /**
  * Students tests should be written in this file
  */
+
+test('title is not empty', (t) =>{
+    const title = dom.window.document.title;
+    assert.equal(title, 'Hello World');
+});
